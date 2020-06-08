@@ -1,0 +1,47 @@
+@import '../variables';
+
+.tags-container {
+  padding: 5px;
+  width: fit-content;
+  min-height: 300px;
+
+  &__tags {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .tag-wrapper {
+    padding: 0 15px;
+
+    .tag {
+      background: $btn-green;
+      border-radius: 10px;
+      border: 2px solid $white-5;
+      cursor: pointer;
+      outline: none;
+      padding: 15px;
+      transition: background .3s;
+      font-weight: bold;
+      margin: 10px 0;
+
+      &:hover {
+        background: $btn-red;
+        color: $white-2;
+      }
+    }
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+  .empty-tags {
+    color: $white-1;
+    font-size: 15px;
+  }
+}

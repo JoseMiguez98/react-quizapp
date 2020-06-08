@@ -1,0 +1,40 @@
+@import '../variables';
+
+.question {
+  color: $white-5;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+
+  &__form {
+    align-items: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    min-height: 500px;
+  }
+
+  &__question {
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+  }
+
+  &__show-answer {
+    margin: 5px 0;
+  }
+}
+
+.quiz-game {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  height: 500px;
+
+  &__finished, &__result-msg {
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+  }
+}

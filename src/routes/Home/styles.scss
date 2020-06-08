@@ -1,0 +1,15 @@
+@import '../../components/variables.scss';
+
+.game-container {
+  padding: 20px 0;
+
+  &__title {
+    color: $white-5;
+    text-align: center;
+  }
+
+  &__link-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
